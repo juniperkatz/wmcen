@@ -11,4 +11,4 @@ We write about three things. First, what the new Massachusetts permitting law ac
 
 We assume readers are reasonable adults capable of weighing a tradeoff. We try not to talk down. We try not to talk up. When the answer is genuinely uncertain, we say so.
 
-The site is new. The catalog of articles will grow as members of the network write and review. If you would like to contribute, reach out through the contact page.
+The site is new. The catalog of articles will grow as members of the network write and review.
