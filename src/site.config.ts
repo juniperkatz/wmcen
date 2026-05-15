@@ -3,7 +3,7 @@ import type { SiteConfig } from "@/types";
 
 export const siteConfig: SiteConfig = {
 	// ! Please remember to replace the following site property with your own domain, used in astro.config.ts
-	url: "https://juniperkatz.github.io",
+	url: "https://wmcen.org",
 	title: "Western Massachusetts Clean Energy Network",
 	author: "WMCEN",
 	description: "An informal group working on clean energy, siting, and forest stewardship in Western Massachusetts.",
