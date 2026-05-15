@@ -1,0 +1,39 @@
+{
+  "site": {
+    "title": "Western Massachusetts Clean Energy Network",
+    "base_url": "https://juniperkatz.github.io",
+    "base_path": "/wmcen",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.png",
+    "logo": "",
+    "logo_width": "200",
+    "logo_height": "34",
+    "logo_text": "WMCEN"
+  },
+
+  "settings": {
+    "pagination": 6
+  },
+
+  "metadata": {
+    "meta_author": "Western Massachusetts Clean Energy Network",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "A community group working on clean energy, siting, and forest stewardship in Western Massachusetts."
+  },
+
+  "google_tag_manager": {
+    "enable": false,
+    "gtm_id": ""
+  },
+
+  "params": {
+    "contact_form_action": "#",
+    "copyright": "Copyright 2026 Western Massachusetts Clean Energy Network."
+  },
+
+  "contactinfo": {
+    "address": "Western Massachusetts",
+    "email": "info@wmcen.org",
+    "phone": ""
+  }
+}
