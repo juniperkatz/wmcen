@@ -1,47 +1,70 @@
 {
-  "name": "bookworm-light-astro",
-  "version": "4.0.2",
-  "license": "MIT",
-  "type": "module",
-  "packageManager": "yarn@1.22.22",
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "format": "prettier -w .",
-    "check": "astro check",
-    "deploy:cf-workers": "npm run build && wrangler deploy",
-    "preview:cf-workers": "npm run build && wrangler dev"
-  },
-  "dependencies": {
-    "@astrojs/check": "0.9.8",
-    "@astrojs/mdx": "5.0.4",
-    "@astrojs/react": "5.0.4",
-    "@astrojs/sitemap": "3.7.2",
-    "@justinribeiro/lite-youtube": "^1.9.0",
-    "astro": "6.1.9",
-    "astro-auto-import": "^0.5.1",
-    "astro-gtm-lite": "^1.0.1",
-    "date-fns": "^4.1.0",
-    "fuse.js": "^7.3.0",
-    "gray-matter": "^4.0.3",
-    "marked": "^18.0.2",
-    "react": "^19.2.5",
-    "react-dom": "^19.2.5",
-    "react-icons": "^5.6.0"
-  },
-  "devDependencies": {
-    "@tailwindcss/forms": "^0.5.11",
-    "@tailwindcss/typography": "^0.5.19",
-    "@tailwindcss/vite": "^4.2.4",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "19.2.3",
-    "prettier": "^3.8.3",
-    "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.7.2",
-    "sharp": "0.34.5",
-    "tailwindcss": "^4.2.4",
-    "typescript": "^6.0.3",
-    "wrangler": "^4.84.1"
-  }
+	"name": "astro-cactus",
+	"type": "module",
+	"version": "7.1.0",
+	"private": false,
+	"scripts": {
+		"postinstall": "npm rebuild sharp --force",
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"postbuild": "pagefind --site dist",
+		"preview": "astro preview",
+		"check": "astro check && biome check",
+		"lint": "biome check --write",
+		"format": "prettier -w . --cache"
+	},
+	"dependencies": {
+		"@astrojs/markdown-remark": "^7.0.0",
+		"@astrojs/mdx": "5.0.0",
+		"@astrojs/rss": "4.0.17",
+		"@astrojs/sitemap": "3.7.1",
+		"@tailwindcss/vite": "4.2.1",
+		"astro": "6.0.4",
+		"astro-expressive-code": "^0.41.7",
+		"astro-icon": "^1.1.5",
+		"astro-robots-txt": "^1.0.0",
+		"astro-webmanifest": "^1.0.0",
+		"cssnano": "^7.1.3",
+		"hastscript": "^9.0.0",
+		"mdast-util-directive": "^3.0.0",
+		"mdast-util-to-markdown": "^2.1.2",
+		"mdast-util-to-string": "^4.0.0",
+		"rehype-autolink-headings": "^7.1.0",
+		"rehype-external-links": "^3.0.0",
+		"rehype-unwrap-images": "^1.0.0",
+		"remark-directive": "^4.0.0",
+		"satori": "0.25.0",
+		"satori-html": "^0.3.2",
+		"sharp": "^0.34.5",
+		"tailwindcss": "^4.2.1",
+		"unified": "^11.0.5",
+		"unist-util-visit": "^5.1.0"
+	},
+	"devDependencies": {
+		"@astrojs/check": "^0.9.7",
+		"@biomejs/biome": "^2.4.7",
+		"@iconify-json/mdi": "^1.2.2",
+		"@pagefind/default-ui": "^1.4.0",
+		"@tailwindcss/typography": "^0.5.19",
+		"@types/hast": "^3.0.4",
+		"@types/mdast": "^4.0.4",
+		"@types/node": "^25.7.0",
+		"autoprefixer": "^10.4.27",
+		"pagefind": "^1.4.0",
+		"prettier": "^3.8.1",
+		"prettier-plugin-astro": "0.14.1",
+		"prettier-plugin-tailwindcss": "^0.7.2",
+		"reading-time": "^1.5.0",
+		"typescript": "^5.9.3"
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": ["@biomejs/biome", "@tailwindcss/oxide", "esbuild", "sharp"],
+		"overrides": {
+			"sharp": "^0.34.5"
+		}
+	},
+	"overrides": {
+		"sharp": "^0.34.5"
+	}
 }
