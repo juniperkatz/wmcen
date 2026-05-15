@@ -5,7 +5,7 @@ publishDate: "2026-05-12"
 tags: ["chapter-239", "permitting", "siting", "massachusetts", "efsb"]
 ---
 
-Massachusetts changed the rules for siting solar, onshore wind, and battery storage when Governor Healey signed Chapter 239 of the Acts of 2024. The state finalized the regulations on February 27, 2026. Most provisions take effect July 1, 2026. Below is the short version. A longer primer lives in our resources section.
+Massachusetts changed the rules for siting solar, onshore wind, and battery storage when Governor Healey signed Chapter 239 of the Acts of 2024. The state finalized the regulations on February 27, 2026. Most provisions take effect July 1, 2026. Below is the short version. A more detailed primer will follow.
 
 ## What used to happen
 

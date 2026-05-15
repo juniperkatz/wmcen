@@ -23,6 +23,6 @@ The math says the deployment benefit overtakes the conversion debt within five t
 
 The math says forest-to-solar conversion is usually a net climate gain on a thirty-year horizon. It does not say the conversion is the right choice for any particular site. Sites that are already cleared, degraded, or built-on score better on every measure that matters. Brownfields, parking lots, rooftops, and former agricultural land come first.
 
-The state's new Site Suitability Assessment, which large projects must complete under Chapter 239, is designed to put this hierarchy on paper. How well it works in practice is an open question.
+Chapter 239 requires large projects to complete a Site Suitability Assessment that puts this hierarchy on paper. How well it works in practice is an open question.
 
 We will keep watching.

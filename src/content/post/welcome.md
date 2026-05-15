@@ -7,7 +7,7 @@ tags: ["mission", "about"]
 
 A few residents of Western Massachusetts started meeting at a cafe in Hadley to talk about clean energy siting. The group grew. The conversations got long. This site is where we publish what we learn.
 
-We write about three things. First, what the new Massachusetts permitting law actually says, in plain language. Second, where the hardest tradeoffs sit, including forest carbon versus solar deployment. Third, claims that travel through public meetings and op-ed pages, checked against the evidence.
+We write about three things. First, what the new Massachusetts permitting law actually says, in plain language. Second, where the hardest tradeoffs sit, including forest carbon versus solar deployment. Third, the claims that come up in public meetings and op-eds, checked against the evidence.
 
 We assume readers are reasonable adults capable of weighing a tradeoff. We try not to talk down. We try not to talk up. When the answer is genuinely uncertain, we say so.
 

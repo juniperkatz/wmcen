@@ -6,7 +6,7 @@ export const siteConfig: SiteConfig = {
 	url: "https://juniperkatz.github.io",
 	title: "Western Massachusetts Clean Energy Network",
 	author: "WMCEN",
-	description: "A community group working on clean energy, siting, and forest stewardship in Western Massachusetts.",
+	description: "An informal group working on clean energy, siting, and forest stewardship in Western Massachusetts.",
 	lang: "en-US",
 	ogLocale: "en_US",
 	date: {
