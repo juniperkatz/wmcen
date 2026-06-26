@@ -1,0 +1,42 @@
+---
+// Responsive, privacy-minded video embed. Defaults to Vimeo.
+// For an unlisted Vimeo video, pass the privacy hash (the token after "/" or "?h=" in the share link).
+interface Props {
+	id: string;
+	title: string;
+	provider?: "vimeo" | "youtube";
+	hash?: string;
+}
+
+const { id, title, provider = "vimeo", hash } = Astro.props;
+
+const pending = !id || id.startsWith("REPLACE");
+
+let src = "";
+if (provider === "vimeo") {
+	const params = new URLSearchParams({ dnt: "1", title: "0", byline: "0", portrait: "0" });
+	if (hash) params.set("h", hash);
+	src = `https://player.vimeo.com/video/${id}?${params.toString()}`;
+} else {
+	src = `https://www.youtube-nocookie.com/embed/${id}`;
+}
+---
+
+{
+	pending ? (
+		<div class="text-global-text/70 flex aspect-video w-full items-center justify-center rounded-md border border-dashed border-global-text/30 p-6 text-center text-sm">
+			Video link pending. Paste the Vimeo ID into the page source, then redeploy, to publish the player.
+		</div>
+	) : (
+		<div class="relative aspect-video w-full overflow-hidden rounded-md">
+			<iframe
+				src={src}
+				title={title}
+				loading="lazy"
+				class="absolute inset-0 h-full w-full border-0"
+				allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
+				allowfullscreen
+			/>
+		</div>
+	)
+}

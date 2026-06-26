@@ -1,0 +1,60 @@
+---
+import VideoEmbed from "@/components/VideoEmbed.astro";
+import { narration } from "@/data/solarDelayNarration";
+import PageLayout from "@/layouts/Base.astro";
+
+// After uploading to Vimeo, paste the numeric video ID here.
+// For an unlisted video, also paste the privacy hash (the token after "?h=" or the
+// last path segment of the share link, e.g. vimeo.com/123456789/abcdef0123 -> "abcdef0123").
+const VIMEO_ID = "1204938179";
+const VIMEO_HASH = "";
+
+const meta = {
+	title: "The Hidden Cost of Solar Delay",
+	description:
+		"A narrated presentation on what happens if Massachusetts protects forest land but falls short of its own solar deployment targets.",
+};
+---
+
+<PageLayout meta={meta}>
+	<h1 class="title mb-2">The Hidden Cost of Solar Delay</h1>
+	<p class="text-accent mb-8">Less clean electricity today, greater forest burdens tomorrow.</p>
+
+	<VideoEmbed
+		id={VIMEO_ID}
+		hash={VIMEO_HASH}
+		title="The Hidden Cost of Solar Delay, a narrated presentation"
+	/>
+
+	<div class="prose prose-sm prose-cactus mt-10 max-w-none">
+		<p>
+			John Pepi built this presentation to test one question. What happens if Massachusetts
+			protects its forests but builds solar too slowly to meet its own climate plan?
+		</p>
+		<p>
+			The talk runs about nine minutes and draws on state planning data. It walks through a scenario
+			where solar reaches only 80 percent of the targets set for 2026 through 2050. The shortfall
+			does more than delay clean power. It releases carbon the state never budgeted for, and it hands
+			future forests the work of absorbing that carbon. Play the video above. The full narration
+			follows.
+		</p>
+
+		<details class="mt-8">
+			<summary class="cursor-pointer font-semibold">Transcript</summary>
+			<div class="mt-4">
+				{
+					narration.map((section) => (
+						<Fragment>
+							{section.heading && <h3>{section.heading}</h3>}
+							<p>{section.text}</p>
+						</Fragment>
+					))
+				}
+			</div>
+		</details>
+	</div>
+
+	<p class="mt-12">
+		<a href="/posts/" class="text-link">Back to Articles</a>
+	</p>
+</PageLayout>
