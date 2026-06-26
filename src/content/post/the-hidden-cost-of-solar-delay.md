@@ -1,6 +1,6 @@
 ---
 title: "The Hidden Cost of Solar Delay"
-description: "A narrated talk on the carbon cost of building solar too slowly to meet the Massachusetts climate plan."
+description: "John Pepi's talk on the cost of protecting forests while building solar too slowly in Massachusetts. The carbon the state fails to avoid lands on the forests."
 publishDate: "2026-06-26"
 tags: ["solar", "forest-carbon", "decarbonization", "presentation"]
 ---
