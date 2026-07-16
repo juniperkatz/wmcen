@@ -1,5 +1,7 @@
-// Narration for "The Hidden Cost of Solar Delay," by section.
-// Source: John Pepi's recorded narration script (June 2026).
+// Narration for "The Hidden Costs of Solar Delay," by section.
+// Source: John Pepi's recorded narration script (June 2026). The video was
+// revised 7-14-26; John has not sent a revised script, so this text awaits
+// his confirmation if the re-record changed any wording.
 // Lightly cleaned for reading. Whitespace normalized, stage directions removed, wording preserved.
 
 export interface NarrationSection {

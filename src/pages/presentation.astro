@@ -6,24 +6,24 @@ import PageLayout from "@/layouts/Base.astro";
 // After uploading to Vimeo, paste the numeric video ID here.
 // For an unlisted video, also paste the privacy hash (the token after "?h=" or the
 // last path segment of the share link, e.g. vimeo.com/123456789/abcdef0123 -> "abcdef0123").
-const VIMEO_ID = "1204938179";
+const VIMEO_ID = "1210539319";
 const VIMEO_HASH = "";
 
 const meta = {
-	title: "The Hidden Cost of Solar Delay",
+	title: "The Hidden Costs of Solar Delay",
 	description:
 		"A narrated talk on the double climate cost of building solar too slowly in Massachusetts. More fossil emissions now, a heavier forest carbon burden later.",
 };
 ---
 
 <PageLayout meta={meta}>
-	<h1 class="title mb-2">The Hidden Cost of Solar Delay</h1>
+	<h1 class="title mb-2">The Hidden Costs of Solar Delay</h1>
 	<p class="text-accent mb-8">Less clean electricity today, greater forest burdens tomorrow.</p>
 
 	<VideoEmbed
 		id={VIMEO_ID}
 		hash={VIMEO_HASH}
-		title="The Hidden Cost of Solar Delay, a narrated presentation"
+		title="The Hidden Costs of Solar Delay, a narrated presentation"
 	/>
 
 	<div class="prose prose-sm prose-cactus mt-10 max-w-none">
