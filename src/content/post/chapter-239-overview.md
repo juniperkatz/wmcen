@@ -9,7 +9,7 @@ Massachusetts changed the rules for siting solar, onshore wind, and battery stor
 
 ## What used to happen
 
-The Energy Facilities Siting Board reviewed generation projects above 100 megawatts. No onshore solar or wind project in Massachusetts has ever reached that threshold. Every such project ran through local permitting, often through several boards in sequence. Our research team's 2026 study of 26 projects across 17 Massachusetts towns found a median local review of 173 days. Contested and larger projects ran much longer.
+The Energy Facilities Siting Board reviewed generation projects above 100 megawatts. No onshore solar or wind project in Massachusetts has ever reached that threshold. Every such project ran through local permitting, often through several boards in sequence. Our research team's [2026 study](https://doi.org/10.3389/fsuep.2026.1771870) of 26 projects across 17 Massachusetts towns found a median local review of 173 days and a mean of 250. Projects that were canceled or ended up in court ran much longer.
 
 ## What changes
 
