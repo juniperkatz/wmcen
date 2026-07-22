@@ -1,0 +1,259 @@
+---
+import PageLayout from "@/layouts/Base.astro";
+
+const meta = {
+	description:
+		"Principal assumptions and sources for John Pepi's presentation The Hidden Costs of Solar Delay.",
+	title: "Methods and Assumptions",
+};
+---
+
+<PageLayout meta={meta}>
+	<h1 class="title mb-2">Principal Assumptions and Sources</h1>
+	<p class="text-accent mb-8">The Hidden Costs of Solar Delay, July 14, 2026 version</p>
+
+	<div class="prose prose-sm prose-cactus max-w-none">
+		<p>
+			This page carries the assumptions and sources behind
+			<a href="/presentation/">John Pepi's narrated presentation</a> for the Western
+			Massachusetts Clean Energy Network. The parameters and the emissions factor derivation are
+			John's. The group maintains this page and updates it as sources are added. Last updated
+			July 22, 2026.
+		</p>
+
+		<div class="overflow-x-auto">
+			<table>
+				<thead>
+					<tr>
+						<th>Parameter</th>
+						<th>Assumption</th>
+						<th>Sources and notes</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Existing Massachusetts forest</td>
+						<td>3,000,000 acres</td>
+						<td>
+							Rounded up from 2.9 million for simplicity of calculations as well as to
+							acknowledge many hundreds of thousands of urban tree and forest acres.
+							<a
+								href="https://www.mass.gov/info-details/2023-massachusetts-climate-report-card-natural-working-lands"
+								>Massachusetts Climate Report Card, Natural and Working Lands</a
+							>
+						</td>
+					</tr>
+					<tr>
+						<td>Forest CO2 sequestration rate</td>
+						<td>2 MT CO2e/acre/year</td>
+						<td>
+							Harvard Forest and University of Massachusetts Amherst (2025). <em
+								>Forest Carbon Study: The Impact of Alternative Land-Use Scenarios on
+								Terrestrial Carbon Storage and Sequestration in Massachusetts.</em
+							> Prepared for the Massachusetts Executive Office of Energy and Environmental Affairs.
+							This is a conservative value; Catanzaro and D'Amato (below) estimate 1.5 MT CO2e/acre/year.
+						</td>
+					</tr>
+					<tr>
+						<td>Analysis period</td>
+						<td>25 years</td>
+						<td>Remaining 25 years in the CECP 2050 Plan</td>
+					</tr>
+					<tr>
+						<td>Forest carbon released upon conversion</td>
+						<td>300 MT CO2e/acre</td>
+						<td>
+							Catanzaro, P. F., and D'Amato, A. W. (2019). <em
+								>Forest Carbon: An Essential Natural Solution for Climate Change.</em
+							> University of Massachusetts Amherst, MassWoods Program; University of Vermont Extension.
+							Total for all above and below ground carbon is 283 MT CO2/acre, the average of carbon
+							values for four major Massachusetts forest types.
+						</td>
+					</tr>
+					<tr>
+						<td>Solar land requirement (direct and accessory)</td>
+						<td>6.8 acres/MWdc</td>
+						<td>
+							Rogan, J., Heltzel, E., Tao, S., Ye, S., Geron, N., and Godwin, D. (2023). <em
+								>Where Has Solar Been Developed with Respect to Land Use in Massachusetts?</em
+							>
+							<a href="https://i.juniperkatz.com/f/Wqi9oL"
+								>Western Massachusetts Solar Forum, Session 2</a
+							>, UMass Extension
+						</td>
+					</tr>
+					<tr>
+						<td>Solar land requirement (direct PV footprint only)</td>
+						<td>3-3.5 acres/MWdc</td>
+						<td>
+							Bolinger, M., and Bolinger, G. (2022). Land Requirements for Utility-Scale PV: An
+							Empirical Update on Power and Energy Density. <em
+								>IEEE Journal of Photovoltaics</em
+							>
+						</td>
+					</tr>
+					<tr>
+						<td>Solar generation (direct PV footprint acreage)</td>
+						<td>380-420 MWh/acre/year</td>
+						<td>
+							Bolinger, M., and Bolinger, G. (2022). Land Requirements for Utility-Scale PV: An
+							Empirical Update on Power and Energy Density. <em
+								>IEEE Journal of Photovoltaics</em
+							>
+						</td>
+					</tr>
+					<tr>
+						<td>Solar PV 25-year generation with degradation adjustments</td>
+						<td>2% production loss relative to nameplate after year 1, and 0.5%/year thereafter</td>
+						<td>
+							Jordan, D. C., and Kurtz, S. R. (2013). <a
+								href="https://doi.org/10.1002/pip.1182"
+								>Photovoltaic Degradation Rates: An Analytical Review</a
+							>. <em>Progress in Photovoltaics: Research and Applications</em>, 21(1), 12-29. Also
+							<a href="https://www.osti.gov/biblio/1045052">OSTI 1045052</a>
+						</td>
+					</tr>
+					<tr>
+						<td>Grid emissions factor for the Massachusetts grid, adjusted for marginal emissions</td>
+						<td>600 lbs CO2e/MWh (net, from 775). See the derivation below the table.</td>
+						<td>
+							International Financial Institutions Technical Working Group on Greenhouse Gas
+							Accounting (2022). <a
+								href="https://unfccc.int/climate-action/sectoral-engagement/ifis-harmonization-of-standards-for-ghg-accounting/ifi-twg-list-of-methodologies"
+								>Methodological Approach for the Common Default Grid Emission Factor Dataset
+								(AHG-001)</a
+							>. Coordinated by the UNFCCC.
+						</td>
+					</tr>
+					<tr>
+						<td>Solar + BESS embodied carbon</td>
+						<td>~1,000 MT CO2e/MWdc (lifetime)</td>
+						<td>
+							Peiseler, L., et al. (2024). <a href="https://doi.org/10.1038/s41467-024-54634-y"
+								>Carbon footprint distributions of lithium-ion batteries and their materials</a
+							>. <em>Nature Communications</em>, 15, 10301. Also Gan, Y., et al. (2023). Greenhouse
+							Gas Emissions Embodied in the U.S. Solar Photovoltaic Supply Chain. <em
+								>Environmental Research Letters</em
+							>, 18(10), 104012.
+						</td>
+					</tr>
+					<tr>
+						<td>Solar curtailment</td>
+						<td>5% lifetime</td>
+						<td>
+							Massachusetts EEA (2020). Energy Pathways to Deep Decarbonization Technical Report,
+							Fig. 27; the All Options pathway projects approximately 5% variable renewable energy
+							curtailment by 2040 and less than 10% by 2050. Also Ardani, K., et al. (2021). Solar
+							Futures Study, NREL/TP-6A20-80594; and Denholm, P., and Mai, T. (2019). Timescales of
+							energy storage needed for reducing renewable energy curtailment. <em
+								>Renewable Energy</em
+							>, 130, 388-399.
+						</td>
+					</tr>
+					<tr>
+						<td>Forest footprint multiplier (non-PV-footprint land)</td>
+						<td>1.67 acres affected per acre of PV footprint</td>
+						<td>
+							Rogan, J., et al. (2023). <a href="https://i.juniperkatz.com/f/Wqi9oL"
+								>Western Massachusetts Solar Forum, Session 2</a
+							>, UMass Extension. Also Harvard Forest and University of Massachusetts Amherst
+							(2025). <em>Forest Carbon Study</em>, prepared for the Massachusetts EEA.
+						</td>
+					</tr>
+					<tr>
+						<td>Grid energy loss</td>
+						<td>4.5% of ac inverter generation</td>
+						<td>
+							U.S. EPA. <em>Emissions and Generation Resource Integrated Database (eGRID2022)</em>,
+							Massachusetts State Output Emission Rate (CO2e), 2024
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<h2>Emissions factor derivation</h2>
+		<p>
+			The result of applying the UNFCCC IFI-TWG GHG Accounting Protocol to the ISO-NE grid is
+			approximately 775 lbs CO2e/MWh. The Combined Margin is 75% Operating Margin plus 25% Build
+			Margin, where the Operating Margin is the GHG emissions value of the top 50% of highest
+			priced, last dispatched grid resources. On the New England grid, these are natural gas and
+			oil powered plants. The Build Margin is comprised of the average emission factors for new
+			generating resources expected to come online over the next 8 years. In New England, these
+			resources will be almost entirely renewables and battery storage. I have assigned a 100 lbs
+			CO2/MWh value to these Build resources. These emissions are largely comprised of cradle to
+			grave, embodied energy related emissions. Therefore
+		</p>
+		<p>
+			Combined Margin = (0.75 &times; 1,000) + (0.25 &times; 100) = 775 lbs CO2e/MWh
+		</p>
+		<p>
+			The analysis of lifetime (25 year) solar energy production from 1 acre of solar PV results
+			in 8,374 MWh. This value is net of (1) annual solar output decline over years 1 to 25 due to
+			panel efficiency losses, resulting in 87.5% efficiency at year 25; (2) 4.5% distribution and
+			transmission losses; and (3) an assumed 5% total lifetime curtailment.
+		</p>
+		<p>8,374 MWh &times; 775 lbs CO2e/MWh = 2,948 MT CO2e per lifetime</p>
+		<p>
+			From this I subtract 655 MT CO2e to account for one-time emissions related to solar
+			development. First, 132 MT CO2e/acre for the carbon emissions associated with the embodied
+			energy in solar and BESS production and transportation. Second, 523 MT CO2e/acre for
+			one-time forest emissions (300 MT CO2e/acre) and foregone forest sequestration for 25 years
+			(50 MT CO2e/acre), with a 1.67 multiplier applied to each of the forest carbon loss factors
+			to account for the additional land required beyond the solar PV footprint, (300 + 50)
+			&times; 1.67 = 583. Finally, I add back 60 MT CO2e/acre for average New England carbon
+			recovery (20%) during tree harvesting in the form of long-term carbon storage in furniture,
+			flooring and lumber.
+		</p>
+		<p>Lifetime net adjustments to 1 acre of solar CO2e mitigation benefits are (-132) + (-583) + 60 = -655 MT CO2e.</p>
+		<p>
+			2,948 MT CO2e per solar acre of 25-year displacement, less the net adjustment of 655 MT
+			CO2e, gives a 25-year mitigation of 2,293 MT CO2e per solar acre. This represents a -22%
+			adjustment from the original calculation, since 2,948 - 2,293 = 655 and 655 / 2,948 = 22%.
+			For the purposes of adjusting the emissions factor per MWh applied in the presentation, I
+			took the UNFCCC/ISO-NE derived factor of 775 lbs CO2e/MWh and reduced it by 22% to 600 lbs
+			CO2e/MWh.
+		</p>
+
+		<h2>End notes</h2>
+		<ol>
+			<li>
+				International Financial Institutions Technical Working Group on Greenhouse Gas Accounting
+				(IFI TWG). <a
+					href="https://unfccc.int/climate-action/sectoral-engagement/ifis-harmonization-of-standards-for-ghg-accounting/ifi-twg-list-of-methodologies"
+					>Methodological Approach for the Common Default Grid Emission Factor Dataset</a
+				>, IFI TWG-AHG-001, Version 01.1. Bonn, Germany: UNFCCC, January 2022.
+			</li>
+			<li>
+				Kim, H. C., Fthenakis, V., Choi, J.-K., and Turney, D. E. (2012). <a
+					href="https://doi.org/10.1111/j.1530-9290.2011.00423.x"
+					>Life cycle greenhouse gas emissions of thin-film photovoltaic electricity generation:
+					Systematic review and harmonization</a
+				>. <em>Journal of Industrial Ecology</em>, 16(S1), S110-S121.
+			</li>
+			<li>
+				Hsu, D. D., O'Donoughue, P., Fthenakis, V., Heath, G. A., Kim, H. C., Sawyer, P., Choi,
+				J.-K., and Turney, D. E. (2012). <a href="https://doi.org/10.1111/j.1530-9290.2011.00439.x"
+					>Life cycle greenhouse gas emissions of crystalline silicon photovoltaic electricity
+					generation: Systematic review and harmonization</a
+				>. <em>Journal of Industrial Ecology</em>, 16(S1), S122-S135.
+			</li>
+			<li>
+				National Renewable Energy Laboratory (2012). <a href="https://doi.org/10.2172/1056745"
+					>Life cycle greenhouse gas emissions from solar photovoltaics</a
+				>, Fact Sheet No. NREL/FS-6A20-56487.
+			</li>
+		</ol>
+
+		<h2>Open items</h2>
+		<p>
+			Sources for the deployment-side inputs are being added. Those are the CECP solar trajectory,
+			the ISO-NE forecast, the 2020 to 2025 installation history, the 123 TWh demand figure for
+			2050, and the 800 and 147 MMT carbon budgets. This page will be updated as they land.
+		</p>
+	</div>
+
+	<p class="mt-12">
+		<a href="/presentation/" class="cactus-link">Back to the presentation</a>
+	</p>
+</PageLayout>
