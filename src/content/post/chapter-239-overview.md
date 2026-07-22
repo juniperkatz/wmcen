@@ -21,7 +21,7 @@ It consolidates permits. A small project gets one local permit. A large project 
 
 It sets deadlines. Towns have twelve months to decide a small project. The Siting Board has fifteen months to decide a large one. A missed deadline, local or state, can grant the permit by operation of law.
 
-It adds engagement and equity requirements. Developers must hold community meetings before filing. Large projects must complete a Site Suitability Assessment that scores farmland value, wildlife, carbon storage, climate resilience, and existing social burdens. A new state fund pays for legal counsel and expert analysis for towns, community groups, and residents.
+It adds engagement and equity requirements. Developers must hold community meetings before filing. Most projects, large and small, must complete a Site Suitability Report that scores climate resilience, carbon storage, biodiversity, farmland, and existing social and environmental burdens, with lower scores marking more suitable sites. A new state fund pays for legal counsel and expert analysis for towns, community groups, and residents.
 
 ## Key dates
 
