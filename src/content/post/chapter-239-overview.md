@@ -9,7 +9,7 @@ Massachusetts changed the rules for siting solar, onshore wind, and battery stor
 
 ## What used to happen
 
-The Energy Facilities Siting Board reviewed generation projects above 100 megawatts. No solar or wind project in Massachusetts has ever reached that threshold. Every such project ran through local permitting, often through several boards in sequence. Our research team's 2026 study of 26 projects across 17 Massachusetts towns found a median local review of 173 days. Contested and larger projects ran much longer.
+The Energy Facilities Siting Board reviewed generation projects above 100 megawatts. No onshore solar or wind project in Massachusetts has ever reached that threshold. Every such project ran through local permitting, often through several boards in sequence. Our research team's 2026 study of 26 projects across 17 Massachusetts towns found a median local review of 173 days. Contested and larger projects ran much longer.
 
 ## What changes
 
@@ -19,7 +19,7 @@ It lowers the state threshold. Solar and wind above 25 megawatts now go to the S
 
 It consolidates permits. A small project gets one local permit. A large project gets one state permit that covers state, regional, and local approvals.
 
-It sets deadlines. Towns have twelve months to decide a small project. The Siting Board has fifteen months to decide a large one. A missed local deadline grants the permit by operation of law.
+It sets deadlines. Towns have twelve months to decide a small project. The Siting Board has fifteen months to decide a large one. A missed deadline, local or state, can grant the permit by operation of law.
 
 It adds engagement and equity requirements. Developers must hold community meetings before filing. Large projects must complete a Site Suitability Assessment that scores farmland value, wildlife, carbon storage, climate resilience, and existing social burdens. A new state fund pays for legal counsel and expert analysis for towns, community groups, and residents.
 
