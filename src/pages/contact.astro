@@ -1,0 +1,33 @@
+---
+import PageLayout from "@/layouts/Base.astro";
+
+const meta = {
+	description: "How to reach the Western Massachusetts Clean Energy Network.",
+	title: "Contact",
+};
+---
+
+<PageLayout meta={meta}>
+	<h1 class="title mb-12">Contact</h1>
+	<div class="prose prose-sm prose-cactus max-w-none">
+		<p>
+			Write to the network at
+			<a class="cactus-link" id="contact-link" href="#" data-u="contact" data-d="wmcen.org"
+				><span id="contact-text">contact at wmcen dot org</span></a
+			>. A member reads the inbox and replies as time allows.
+		</p>
+		<p>
+			Corrections are especially welcome. If a number or claim on this site looks wrong, tell us
+			and we will check it against the source.
+		</p>
+	</div>
+	<script>
+		const link = document.getElementById("contact-link") as HTMLAnchorElement | null;
+		if (link) {
+			const addr = `${link.dataset.u}@${link.dataset.d}`;
+			link.href = `mailto:${addr}`;
+			const text = document.getElementById("contact-text");
+			if (text) text.textContent = addr;
+		}
+	</script>
+</PageLayout>
