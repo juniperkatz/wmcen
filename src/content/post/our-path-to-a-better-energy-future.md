@@ -5,7 +5,7 @@ publishDate: "2026-07-23"
 tags: ["commentary", "solar", "forest-carbon", "land-use", "massachusetts"]
 ---
 
-*By Keith Hastie. This column appears as a [guest column in the Daily Hampshire Gazette](https://gazettenet.com/2026/07/22/guest-columnist-keith-hastie-our-path-to-a-better-energy-future/) of July 23, 2026, and as a [My Turn column in the Greenfield Recorder](https://recorder.com/2026/07/22/my-turn-our-path-to-a-better-energy-future/). Republished with the author's permission. This version includes the author's source citations.*
+*By Keith Hastie. This column first appeared in the [Daily Hampshire Gazette](https://gazettenet.com/2026/07/22/guest-columnist-keith-hastie-our-path-to-a-better-energy-future/) on July 22, 2026, and as a [My Turn column in the Greenfield Recorder](https://recorder.com/2026/07/22/my-turn-our-path-to-a-better-energy-future/). Republished with the author's permission. This version includes the author's source citations.*
 
 As the effects of climate change become impossible to ignore, it's a good time to consider the actions needed for us to minimize future harms from unchecked warming. Specifically, our need to install at least 27 gigawatts (GW) of solar capacity by 2050, as outlined in the Massachusetts Clean Energy and Climate Plan. This is a magnificently ambitious goal. If we succeed, not only will we reduce the emissions of heat-trapping carbon dioxide, we'll improve our air quality, uncouple our economy from destructive fossil fuel industries, and keep more of our energy dollars in the Commonwealth. But we should be clear-eyed about what it will take to achieve these overwhelmingly beneficial outcomes.
 
