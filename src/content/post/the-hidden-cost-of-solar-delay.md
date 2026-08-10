@@ -10,4 +10,4 @@ John Pepi built a narrated talk from the group's forest-and-solar work. It runs 
 
 The talk traces one scenario. Massachusetts protects forest land but builds solar too slowly to meet its climate plan. The state pays twice. It burns more fossil fuel for power now, and its forests carry a larger carbon debt later. The talk puts numbers on a 20 percent solar shortfall from 2026 to 2050, in lost clean electricity, in unbudgeted emissions, and in a forest acreage figure for the resulting carbon debt.
 
-[Watch the presentation](/presentation/). The page has the video and a full transcript.
+[Watch the presentation](/presentation/). The page has the video and a full transcript. The [methods and assumptions page](/presentation-methods/) carries every parameter with its source, the derivation of the emissions factor, and the arithmetic behind the totals.
