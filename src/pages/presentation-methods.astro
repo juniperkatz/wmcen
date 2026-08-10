@@ -16,9 +16,8 @@ const meta = {
 		<p>
 			This page carries the assumptions and sources behind
 			<a href="/presentation/">John Pepi's narrated presentation</a> for the Western Massachusetts
-			Clean Energy Network. The parameters and the mitigation rate derivation are John's. The group
-			maintains this page and updates it as sources are added. Last updated August 10, 2026, for
-			the August 6 revision of the talk.
+			Clean Energy Network. The parameters, the mitigation rate derivation and the figures below are
+			his, taken from the supporting documentation for the August 6, 2026 version of the talk.
 		</p>
 		<p>
 			The August 6 revision changed several inputs. The grid emissions factor now comes from the
@@ -209,14 +208,20 @@ const meta = {
 		</p>
 		<p>
 			Start with generation. A direct PV footprint acre generates 400 MWh a year on a dc basis, which
-			converts to ac output at the 1.31 dc/ac ratio. Each footprint acre carries 1.667 cleared acres,
-			so a cleared acre produces roughly 184 MWh a year and 4,601 MWh over 25 years before
-			adjustments. Degradation reaching 13.55% by 2050 brings that to 4,228 MWh. Curtailment rising
-			from zero to 10% brings it to about 4,020 MWh.
+			the 1.31 dc/ac ratio converts to 306.85 MWh of delivered ac output. Each footprint acre carries
+			1.667 cleared acres, so a cleared acre yields 184.07 MWh a year and 4,601.75 MWh over 25 years
+			before adjustments. Degradation of 2.5% in year one and 0.5% compounding thereafter brings that
+			to 4,227.55 MWh. Curtailment rising from zero to 10% removes a further 206.79 MWh, leaving
+			4,020.76 MWh per cleared acre.
 		</p>
 		<p>
-			At 1,014 lbs CO2e/MWh, those 4,020 MWh avoid 1,849 MT CO2e per cleared acre. Four adjustments
-			follow.
+			At 1,014 lbs CO2e/MWh, those 4,020.76 MWh avoid 1,849.0 MT CO2e per cleared acre. Four
+			adjustments follow. Embodied carbon is 1,000 MT CO2e per MWdc, being 750 MT for the PV panel
+			supply chain and 250 MT for 2 MWh of battery storage, spread across the 5.42 cleared acres each
+			MWdc occupies. The forest deductions are the 283 MT of biomass and soil stock released at
+			conversion and 37.5 MT of sequestration foregone over the 25 years, against which John credits
+			back 19.82 MT, being 20% of the 99.09 MT of live above-ground carbon retained in long-lived wood
+			products. Those three forest terms net to 300.68 MT CO2e per cleared acre.
 		</p>
 		<div class="overflow-x-auto">
 			<table>
@@ -227,18 +232,19 @@ const meta = {
 					</tr>
 				</thead>
 				<tbody>
-					<tr><td>Gross avoided grid emissions</td><td>1,849</td></tr>
-					<tr><td>Less solar and BESS embodied carbon</td><td>-184.5</td></tr>
-					<tr><td>Less existing forest carbon stock released</td><td>-283</td></tr>
-					<tr><td>Less 25 years of foregone forest sequestration</td><td>-37.5</td></tr>
-					<tr><td>Plus long-duration wood product credit</td><td>+19.8</td></tr>
-					<tr><td><strong>Net 25-year mitigation</strong></td><td><strong>1,364</strong></td></tr>
+					<tr><td>Gross avoided grid emissions</td><td>+1,849.00</td></tr>
+					<tr><td>Less solar and BESS embodied carbon</td><td>-184.50</td></tr>
+					<tr><td>Less existing forest carbon stock loss</td><td>-283.00</td></tr>
+					<tr><td>Less 25-year foregone forest sequestration</td><td>-37.50</td></tr>
+					<tr><td>Add long-duration wood product credit</td><td>+19.82</td></tr>
+					<tr><td><strong>Net 25-year carbon mitigation</strong></td><td><strong>1,363.82</strong></td></tr>
 				</tbody>
 			</table>
 		</div>
 		<p>
-			Dividing 1,364 MT CO2e by 4,020 MWh gives 0.339 MT, or 748 lbs, of CO2e avoided per
-			megawatt-hour. That is 74% of the 1,014 lbs gross rate.
+			Multiplying 1,363.82 MT CO2e by 2,204.62 lbs per metric ton and dividing by 4,020.76 MWh gives
+			747.9 lbs of CO2e avoided per megawatt-hour, which the presentation carries as 748. That is 74%
+			of the 1,014 lbs gross rate.
 		</p>
 
 		<h2>Shortfall scenario and results</h2>
@@ -262,12 +268,11 @@ const meta = {
 			million metric tons of unbudgeted CO2e.
 		</p>
 		<p>
-			The forest acreage figure divides those emissions by 301 MT CO2e per acre, which is the 283 MT
-			of carbon stock an acre holds plus 37.5 MT of sequestration over 25 years, less the 19.8 MT
-			wood product credit. That gives roughly 131,000 acres. Readers should note what this divisor
-			counts. Most of it is carbon already standing in the forest rather than carbon the forest
-			removes from the air over the study period. On sequestration flow alone, at 1.5 MT per acre
-			per year for 25 years, offsetting 39.5 million metric tons would take about 1.05 million acres.
+			The forest acreage figure divides those emissions by the same 300.68 MT CO2e per acre derived
+			above. That gives roughly 131,000 acres. Readers should note what this divisor counts. Most of
+			it is carbon already standing in the forest rather than carbon the forest removes from the air
+			over the study period. On sequestration flow alone, at 1.5 MT per acre per year for 25 years,
+			offsetting 39.5 million metric tons would take about 1.05 million acres.
 		</p>
 		<p>
 			The carbon budget figures come from the same CECP workbook. The roughly 800 million metric ton
@@ -305,11 +310,12 @@ const meta = {
 			</li>
 		</ol>
 
-		<h2>Open items</h2>
+		<h2>Unsourced figure</h2>
 		<p>
-			The 60 million metric ton figure for current annual Massachusetts emissions is still awaiting
-			a citation. John's slide notes flag it as coming from either the state website or a MassDEP
-			certification letter. This page will name the source once he confirms which.
+			The talk twice puts current Massachusetts emissions at roughly 60 million metric tons a year,
+			on the carbon budget slide and again on the forests as climate infrastructure slide. The
+			supporting documentation does not name a source for it. It is context rather than an input,
+			and none of the results above depend on it.
 		</p>
 	</div>
 
