@@ -6,7 +6,7 @@ Source for `wmcen.org`, the Western Massachusetts Clean Energy Network public si
 
 Two sources govern prose on this site. Read both before drafting or rewriting any content.
 
-The user-global `katz-style` skill applies first and auto-loads for any prose deliverable. Strunk and White discipline, active voice, short declarative sentences, no em dashes, no colons in prose or headers, no AI-tell phrases.
+The user-global `katz-style` skill applies first and auto-loads for any prose deliverable. Strunk and White discipline, active voice, short declarative sentences, no em dashes, colons used sparingly per the katz-style skill's core rule 3, no AI-tell phrases.
 
 The project's own writing rules live at `../README.md` in the parent `Clean-Energy-Group/` directory. They extend `katz-style` with specific bans on parallel bold-header structures, on listicles where prose serves, and on flourish phrases like "Massachusetts has long...", "It is important to note...", "Notably...", "In essence...", "At the end of the day...", "In practice..." unless it marks a real contrast with theory. Headers must be plain noun or short-phrase titles. Tables are welcome for tabular data such as dates.
 
